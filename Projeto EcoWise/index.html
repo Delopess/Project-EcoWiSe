@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoWise</title>
+    <link rel="icon" href="EcoWiseLeaf.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="EcoWisenome.png" alt="logo+nome">
+        </div>
+        <span>
+        <button id="Home">Home</button>
+        <script>
+            document.getElementById('Home').addEventListener('click', function() {
+              document.getElementById('video').scrollIntoView({
+                behavior: 'smooth'
+              });
+            });
+          </script>
+              <button id="Sobre">Sobre Nós</button>
+              <script>
+                  document.getElementById('Sobre').addEventListener('click', function() {
+                    document.getElementById('about').scrollIntoView({
+                      behavior: 'smooth'
+                    });
+                  });
+                </script>
+                <button id="Mission">Objetivos</button>
+                <script>
+                   document.getElementById('Mission').addEventListener('click', function() {
+                     document.getElementById('Services').scrollIntoView({
+                       behavior: 'smooth'
+                    });
+                  });
+                    </script>
+    </header>
+    <section class="video" id="video">
+        <div class="container">
+            <video width="640" height="360" autoplay loop>
+                <source src="florestareverso.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <section class="welcome">
+        <div class="welcome-text">
+            <h2>Bem vindo </h2>
+            <h5> O site EcoWise é um portal de </h5>
+            <h5>educação dedicado a concientizar os</h5>
+            <h5>leitores sobre boas praticas de </h5>
+            <h5>preservação do meio ambiente.</h5>
+
+            
+        </div>
+        <div class="logo3"> </div>
+    </section>
+    <section class="about" id="about">
+        
+        <div class="about-text">
+            <h2> Sobre nós</h2>
+            <h5> Somos uma plataforma dedicada à </h5>
+            <h5>promoção da ecologia e da sustentabilidade.</h5>
+            <h5>futuro mais verde e saudável para todos.</h5>
+            <h5> Nossa missão é inspirar e </h5>
+            <h5>capacitar indivíduos, comunidades e organizações</h5>
+            <h5>a adotarem práticas ecológicas </h5>
+            <h5>que contribuam para um futuro </h5>   
+            <h5>mais verde e saudável para todos.</h5>
+    </section>
+    <section class="services" id="Services">
+        <h2>Nossa Missão</h2>
+        <div class="mission-icons">
+            <div class="mission-icon">
+                <img src="objetivos.png" alt="Ícone Objetivos">
+                <p class="icon-title">Objetivos</p>
+                <div class="vertical-text">
+                    <p>Na EcoWise, nosso principal objetivo é promover a educação ambiental e facilitar a adoção de práticas sustentáveis em todos os aspectos da vida cotidiana. Trabalhamos para desenvolver e disponibilizar recursos educacionais abrangentes que aumentem a conscientização sobre questões ambientais críticas.</p>
+                </div>
+            </div>
+            <div class="mission-icon">
+                <img src="visao.png" alt="Ícone Visão">
+                <p class="icon-title">Visão</p>
+                <div class="vertical-text">
+                    <p>A visão da EcoWise é ser reconhecida como uma líder global na promoção da sustentabilidade e responsabilidade ambiental. Imaginamos um futuro onde a sustentabilidade é a norma em todos os setores da sociedade.</p>
+                </div>
+            </div>
+            <div class="mission-icon">
+                <img src="valores.png" alt="Ícone Valores">
+                <p class="icon-title">Valores</p>
+                <div class="vertical-text">
+                    <p>Os valores da EcoWise são os pilares que sustentam todas as nossas atividades e decisões. A responsabilidade ambiental é o nosso compromisso fundamental, guiando-nos a proteger e preservar o meio ambiente em todas as nossas ações.</p>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="mission-cards">
+            <div class="card">
+                <img src="educacao.jpg" alt="Conteúdo Educacional">
+                <h3>Conteúdo Educacional</h3>
+                <p>Aprenda sobre sustentabilidade com nossos artigos e webinars.</p>
+                <button>CONTINUE LENDO</button>
+            </div>
+            <div class="card">
+                <img src="dicas.jpg" alt="Dicas Práticas">
+                <h3>Dicas Práticas</h3>
+                <p>Dicas simples para adotar hábitos ecológicos no dia a dia.</p>
+                <button>CONTINUE LENDO</button>
+            </div>
+            <div class="card">
+                <img src="projetos.jpg" alt="Projetos e Iniciativas">
+                <h3>Projetos e Iniciativas</h3>
+                <p>Descubra nossos projetos e faça parte da mudança.</p>
+                <button>CONTINUE LENDO</button>
+            </div>
+            <div class="card">
+                <img src="comunidade.jpg" alt="Comunidade">
+                <h3>Comunidade</h3>
+                <p>Conecte-se e colabore com outros em prol do meio ambiente.</p>
+                <button>CONTINUE LENDO</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <img src="EcoWiselogo.png" alt="Logo">
+
+        <div class="social">
+            <a href="#"><img src="logoinsta.png" alt="Instagram"></a>
+            <a href="#"><img src="logofacebook.png" alt="Facebook"></a>
+            <a href="#"><img src="logox.png" alt="Twitter"></a>
+            <a href="&"></a>
+        </div>
+        <p>&copy; 2024 EcoWise. Todos os direitos reservados. Proibida a reprodução total ou parcial sem prévia
+            autorização (Inciso I do Artigo 29 Lei 9.610/98).</p>
+    </footer>
+</body>
+
+</html>
