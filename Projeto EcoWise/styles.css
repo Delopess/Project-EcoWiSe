@@ -1,9 +1,9 @@
 body {
     margin: 0;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #eef0f1;
 }
- 
+
 header {
     background-color: #264059;
     color: white;
@@ -16,57 +16,51 @@ header {
     top: 0;
     z-index: 1000;
 }
-header button {
+
+header button,
+.nav a {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: white;
-    background-color:  #264059;
+    background-color: #264059;
     border: 2px solid #5acc5a31;
     padding: 1px 20px;
     border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
     margin: 10px;
 }
-header button:hover {
+
+header button:hover,
+.nav a:hover {
     background-color: #739E73;
     color: #3B4C61;
-    }
+}
+
 header img {
     width: 160px;
     height: 30px;
     margin-left: 90px;
 }
+
 .video .container {
     width: 100%;
     height: 600px;
     overflow: hidden;
     position: relative;
 }
+
 .video video {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .nav {
     display: flex;
     gap: 10px;
     margin-right: 70px;
 }
-.nav a {
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    color: white;
-    background-color:  #264059;
-    border: 2px solid #5acc5a31;
-    padding: 1px 20px;
-    border-radius: 10px;
-    transition: background-color 0.3s, color 0.3s;
-    margin: 10px;
-}
-.nav a:hover {
-    background-color: #739E73;
-    color: #3B4C61;
-}
+
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -82,7 +76,7 @@ nav ul {
     padding: 0;
     display: flex;
 }
-  
+
 nav ul li {
     margin-left: 1rem;
 }
@@ -92,6 +86,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 1rem;
 }
+
 .welcome {
     position: relative;
     text-align: center;
@@ -109,43 +104,35 @@ nav ul li a {
     height: auto;
 }
 
-
-
 .welcome-text h2 {
     font-size: 3rem;
     margin: 0;
     text-align: left;
-
 }
-.welcome-text h5 {
 
+.welcome-text h5,
+.welcome-text p {
     margin: 0;
     text-align: left;
-
 }
 
 .welcome-text p {
     font-size: 1.2rem;
-    text-align: left;
-    margin: 0; 
-
 }
-.logo3{
+
+.logo3 {
     width: 500px;
     height: 300px;
     background-image: url('EcoWiselogo.png');
-    background-size: 70%; 
-    background-position: top; /* Posiciona a imagem no centro */
-    background-repeat: no-repeat; /* Evita repetição da imagem */
-
-    
+    background-size: 70%;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
-
 .espacamento {
-    white-space: nowrap; /* Evita quebra de linha */
+    white-space: nowrap;
     text-align: left;
-  }
+}
 
 .logo-large {
     position: absolute;
@@ -164,33 +151,31 @@ nav ul li a {
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
-    
-   
-
 }
 
 .about img {
-    width: 500px;  
+    width: 500px;
 }
+
 .about-text {
     max-width: 800px;
     margin: 0 auto;
     color: #feffff;
-    padding-bottom: 5px; 
-    display: flex; /* ou display: grid; */
-    flex-direction: column; 
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
     justify-content: right;
-    
 }
 
 .about-text h2 {
     font-size: 2rem;
 }
-.about-text h5{
+
+.about-text h5 {
     margin: 0;
     padding: 0;
-    line-height: 1; 
-    margin-bottom: 5px; 
+    line-height: 1;
+    margin-bottom: 5px;
 }
 
 .services {
@@ -247,19 +232,17 @@ nav ul li a {
     color: #2d423b;
 }
 
-.mission-icon p {
+.mission-icon p,
+.vertical-text {
     margin-top: 0.5rem;
     color: #2d423b;
 }
 
 .vertical-text {
-    margin-top: 1rem;
     font-size: 1rem;
-    color: #2d423b;
     text-align: left;
     max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1rem auto;
 }
 
 .mission-cards {
@@ -290,7 +273,7 @@ nav ul li a {
 }
 
 .card h3 {
-    margin: 1rem 0 0.5rem 0;
+    margin: 1rem 0 0.5rem;
     font-size: 1.5rem;
     color: #2d423b;
 }
@@ -315,6 +298,7 @@ nav ul li a {
 .card button:hover {
     background-color: #6ebdb5;
 }
+
 footer {
     background-color: #2c3e50;
     color: white;
@@ -323,19 +307,22 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
 footer img {
     width: 200px;
     height: auto;
     align-items: center;
-    margin-top: rem;
 }
+
 footer .social img {
     width: 50px;
     margin-inline-start: auto;
 }
+
 footer p {
     margin: 0;
 }
+
 @media (max-width: 600px) {
     footer .some-element {
         display: none;
