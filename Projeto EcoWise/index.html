@@ -14,32 +14,13 @@
         <div class="logo">
             <img src="EcoWisenome.png" alt="logo+nome">
         </div>
-        <span>
-        <button id="Home">Home</button>
-        <script>
-            document.getElementById('Home').addEventListener('click', function() {
-              document.getElementById('video').scrollIntoView({
-                behavior: 'smooth'
-              });
-            });
-          </script>
-              <button id="Sobre">Sobre Nós</button>
-              <script>
-                  document.getElementById('Sobre').addEventListener('click', function() {
-                    document.getElementById('about').scrollIntoView({
-                      behavior: 'smooth'
-                    });
-                  });
-                </script>
-                <button id="Mission">Objetivos</button>
-                <script>
-                   document.getElementById('Mission').addEventListener('click', function() {
-                     document.getElementById('Services').scrollIntoView({
-                       behavior: 'smooth'
-                    });
-                  });
-                    </script>
-    </header>
+        <nav class="nav">
+            <button id="Home">Home</button>
+            <button id="Sobre">Sobre Nós</button>
+            <button id="Mission">Objetivos</button>
+          </nav>
+          <button class="menu-icon" onclick="toggleMenu()">☰</button>
+        </header>
     <section class="video" id="video">
         <div class="container">
             <video width="640" height="360" autoplay loop>
@@ -137,6 +118,31 @@
         <p>&copy; 2024 EcoWise. Todos os direitos reservados. Proibida a reprodução total ou parcial sem prévia
             autorização (Inciso I do Artigo 29 Lei 9.610/98).</p>
     </footer>
+
+    <script>
+        document.getElementById('Home').addEventListener('click', function () {
+          document.getElementById('video').scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+    
+        document.getElementById('Sobre').addEventListener('click', function () {
+          document.getElementById('about').scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+    
+        document.getElementById('Mission').addEventListener('click', function () {
+          document.getElementById('Services').scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+    
+        function toggleMenu() {
+          var nav = document.querySelector('.nav');
+          nav.classList.toggle('active');
+        }
+      </script>
 </body>
 
 </html>
