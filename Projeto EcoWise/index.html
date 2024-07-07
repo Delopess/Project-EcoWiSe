@@ -21,6 +21,7 @@
           </nav>
           <button class="menu-icon" onclick="toggleMenu()">☰</button>
         </header>
+        <div id="home"></div>
     <section class="video" id="video">
         <div class="container">
             <video width="640" height="360" autoplay loop>
@@ -41,18 +42,13 @@
         <div class="logo3"> </div>
     </section>
     <section class="about" id="about">
-        
+        <div class="about-texts">
         <div class="about-text">
             <h2> Sobre nós</h2>
-            <h5> Somos uma plataforma dedicada à </h5>
-            <h5>promoção da ecologia e da sustentabilidade.</h5>
-            <h5>futuro mais verde e saudável para todos.</h5>
-            <h5> Nossa missão é inspirar e </h5>
-            <h5>capacitar indivíduos, comunidades e organizações</h5>
-            <h5>a adotarem práticas ecológicas </h5>
-            <h5>que contribuam para um futuro </h5>   
-            <h5>mais verde e saudável para todos.</h5>
-    </section>
+            <h5> Somos uma plataforma dedicada à promoção da ecologia e da sustentabilidade. Nossa missão é inspirar e capacitar indivíduos, comunidades e organizações a adotarem práticas ecológicas que contribuam para um futuro mais verde e saudável para todos.</h5>
+        </div> 
+        </div>
+</section>
     <section class="services" id="Services">
         <h2>Nossa Missão</h2>
         <div class="mission-icons">
@@ -121,7 +117,7 @@
 
     <script>
         document.getElementById('Home').addEventListener('click', function () {
-          document.getElementById('video').scrollIntoView({
+          document.getElementById('home').scrollIntoView({
             behavior: 'smooth'
           });
         });
